@@ -4,9 +4,13 @@
 
 body {
     color: #777777;
+    /* png from https://www.toptal.com/designers/subtlepatterns/ */
     background-image: url(../images/greek-vase.png);
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+/* fix header at top of screen, define height and add bottom border */
+/* also bring forward so no content moves above it */
 header {
     position: fixed;
     top: 0;
@@ -14,20 +18,21 @@ header {
     height: 80px;
     width: 100%;
     left: 0;
-    border-top: #cccccc;
+    border-bottom: #cccccc;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
-    z-index: 1;
+    z-index: 999;
 }
 
+/* set fonts for Headers */
 .hfonts {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* restricts content of header to same width as main content */
 #headwrap {
     width: 960px;
     margin: 0 auto;
-    background: black;
     padding: 0px;
 }
 
@@ -39,15 +44,14 @@ h1 {
     background: #4aaaa5;
     float: left;
     margin: 0px;
-    /* display: none; */
     color: #ffffff;
     height: 80px;
     padding: 20px;
 }
 
+/* move header links content to the right */
 .links {
     float: right;
-    /* background: grey; */
     padding-top: 25px;
 }
 
@@ -56,6 +60,7 @@ a {
     text-decoration: none;
 }
 
+/* styles for main content section */
 section {
     position: relative;
     top: 120px;
@@ -69,6 +74,7 @@ section {
     border-style: solid;
 }
 
+/* fixes footer at bottom of screen, adds top border */
 footer {
     position: fixed;
     bottom: 0;
