@@ -96,3 +96,23 @@ footer {
     float: left;
     margin: 0px 20px 10px 0px;
 }
+
+input {
+    width: 100%;
+}
+
+#submitbutton {
+    width: 75px;
+    background-color: #4aaaa5;
+    border: none;
+    color:#ffffff;
+    text-align: center;
+    padding: 5px;
+    /* text-decoration: none;
+    display: inline-block;
+    font-size: 16px; */
+}
+
+#msgbox {
+    height: 250px;
+}
