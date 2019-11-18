@@ -97,9 +97,15 @@ footer {
     margin: 0px 20px 10px 0px;
 }
 
-input {
+input, textarea {
     width: 100%;
+    font-size: 15px;
 }
+
+/* input[type="text"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+} */
 
 #submitbutton {
     width: 75px;
