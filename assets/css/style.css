@@ -61,6 +61,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #48B873;
+}
+
 /* styles for main content section */
 .section1 {
     position: relative;
@@ -106,6 +110,10 @@ input, textarea {
     border-style: solid;
 }
 
+input:invalid {
+    background-color: #B863A9;
+}
+
 #submitbutton {
     width: 75px;
     background-color: #4aaaa5;
@@ -141,7 +149,7 @@ input, textarea {
     padding: 10px;
 }
 
-.clrfx:after {
+.clrfx::after {
     content: " ";
     height: 15px;
     display: block;
