@@ -2,15 +2,19 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background: grey;
+}
+
+p::selection, a::selection, label::selection {
+    color: white;
+}
+
 body {
     color: #777777;
     /* png from https://www.toptal.com/designers/subtlepatterns/ */
     background-image: url(../images/greek-vase.png);
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-p::selection {
-    background-color: black;
 }
 
 /* fix header at top of screen, define height and add bottom border */
@@ -63,6 +67,7 @@ h1 {
 a {
     color: #777777;
     text-decoration: none;
+    height: 0px;
 }
 
 a:hover {
@@ -86,6 +91,7 @@ a:focus {
     border-color: #dddddd;
     border-style: solid;
 }
+
 
 /* fixes footer at bottom of screen, adds top border */
 footer {
@@ -146,7 +152,9 @@ input:invalid {
 .prjimg {
     width: 250px;
     height: 175px;
-    margin: 20px;}
+    margin: 20px;
+    float: left;
+}
 
 .prjdiv {
     position: relative;
@@ -163,13 +171,21 @@ input:invalid {
     background-color: #4aaaa5;
     color: #ffffff;
     padding: 10px;
+    overflow: hidden;
 }
 
-.prjimg:hover {
+.prjimg:hover, .imgp:hover {
     border-style: groove;
     border-color: #4aaaa5;
     border-width: 3px;
+
 }
+
+.clearbackground:active, .clearbackground:focus {
+    background-color:#ffffff;
+    /* outline: none; */
+}
+
 
 .clrfx::after {
     content: " ";
